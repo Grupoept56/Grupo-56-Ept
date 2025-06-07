@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Golpe de Paz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body { margin: 0; background: #87ceeb; overflow: hidden; }
+    canvas { display: block; margin: auto; background: #87ceeb; }
+    #controls { position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); z-index: 10; }
+    button { margin: 5px; padding: 10px 20px; font-size: 16px; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas" width="800" height="450"></canvas>
+  <div id="controls">
+    <button onclick="moveLeft()">◀️</button>
+    <button onclick="jump()">🔼</button>
+    <button onclick="moveRight()">▶️</button>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
